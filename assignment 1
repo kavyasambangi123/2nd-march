@@ -1,0 +1,46 @@
+a=[]
+m=int(input('Enter number of rows:'))
+n=int(input('Enter number of columns:'))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    a.append(row)
+print(a)
+b=[]
+m=int(input('Enter number of rows:'))
+n=int(input('Enter number of columns:'))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        k=int(input())
+        row.append(k)
+    b.append(row)
+print(b)
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        result[i][j]=a[i][j]-b[i][j]
+    for i in range(m):
+        for j in range(n):
+            print(result[i][j],end='')
+print( )
+
+output:-
+output:-
+Enter number of rows:2
+Enter number of columns:2
+9
+8
+7
+6
+[[9, 8], [7, 6]]
+Enter number of rows:2
+Enter number of columns:2
+6
+4
+5
+3
+[[6, 4], [5, 3]]
+Resultant matrix is:3423
